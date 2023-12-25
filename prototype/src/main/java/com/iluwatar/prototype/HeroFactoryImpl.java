@@ -35,6 +35,7 @@ public class HeroFactoryImpl implements HeroFactory {
   private final Mage mage;
   private final Warlord warlord;
   private final Beast beast;
+  private final MyBeast myBeast;
 
   /**
    * Create mage.
@@ -56,5 +57,9 @@ public class HeroFactoryImpl implements HeroFactory {
   public Beast createBeast() {
     return beast.copy();
   }
+  
+  public MyBeast createMyBeast() {
+	    return myBeast.copy();
+	  }
 
 }

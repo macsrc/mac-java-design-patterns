@@ -1,5 +1,5 @@
 ---
-title: Composite
+# title: Composite
 category: Structural
 language: en
 tag:

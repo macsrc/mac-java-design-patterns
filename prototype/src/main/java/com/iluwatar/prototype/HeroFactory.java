@@ -34,5 +34,7 @@ public interface HeroFactory {
   Warlord createWarlord();
 
   Beast createBeast();
+  
+  MyBeast createMyBeast();
 
 }

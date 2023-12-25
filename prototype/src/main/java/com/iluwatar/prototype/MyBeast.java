@@ -33,9 +33,9 @@ import lombok.NoArgsConstructor;
  */
 @EqualsAndHashCode(callSuper = false)
 @NoArgsConstructor
-public abstract class Beast extends Prototype<Beast> {
+public abstract class MyBeast extends Prototype<MyBeast> {
 
-  public Beast(Beast source) {
+  public MyBeast(MyBeast source) {
   }
 
 }

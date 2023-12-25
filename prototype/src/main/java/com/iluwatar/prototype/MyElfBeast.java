@@ -22,20 +22,28 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
 package com.iluwatar.prototype;
 
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 /**
- * Beast.
+ * ElfBeast.
  */
-@EqualsAndHashCode(callSuper = false)
-@NoArgsConstructor
-public abstract class Beast extends Prototype<Beast> {
+@EqualsAndHashCode(callSuper = true)
+@RequiredArgsConstructor
+public class MyElfBeast extends MyBeast {
 
-  public Beast(Beast source) {
+  private final String helpType;
+
+  public MyElfBeast(MyElfBeast myElfBeast) {
+    super(myElfBeast);
+    this.helpType = myElfBeast.helpType;
+  }
+
+  @Override
+  public String toString() {
+    return "My Elven eagle helps in " + helpType;
   }
 
 }

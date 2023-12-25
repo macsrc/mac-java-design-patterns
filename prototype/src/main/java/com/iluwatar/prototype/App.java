@@ -48,25 +48,31 @@ public class App {
     var factory = new HeroFactoryImpl(
         new ElfMage("cooking"),
         new ElfWarlord("cleaning"),
-        new ElfBeast("protecting")
+        new ElfBeast("protecting"),
+        new MyElfBeast("singing")
     );
     var mage = factory.createMage();
     var warlord = factory.createWarlord();
     var beast = factory.createBeast();
+    var myBeast = factory.createMyBeast();
     LOGGER.info(mage.toString());
     LOGGER.info(warlord.toString());
     LOGGER.info(beast.toString());
+    LOGGER.info(myBeast.toString());
 
     factory = new HeroFactoryImpl(
         new OrcMage("axe"),
         new OrcWarlord("sword"),
-        new OrcBeast("laser")
+        new OrcBeast("laser"),
+        new MyElfBeast("harmonium")
     );
     mage = factory.createMage();
     warlord = factory.createWarlord();
     beast = factory.createBeast();
+    myBeast = factory.createMyBeast();
     LOGGER.info(mage.toString());
     LOGGER.info(warlord.toString());
     LOGGER.info(beast.toString());
+    LOGGER.info(myBeast.toString());
   }
 }

@@ -1,5 +1,5 @@
 ---
-title: Proxy
+# title: Proxy
 category: Structural
 language: en
 tag:

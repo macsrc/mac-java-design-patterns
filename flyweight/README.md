@@ -1,5 +1,5 @@
 ---
-title: Flyweight
+# title: Flyweight
 category: Structural
 language: en
 tag:

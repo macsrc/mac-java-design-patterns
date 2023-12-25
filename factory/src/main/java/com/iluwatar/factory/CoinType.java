@@ -22,6 +22,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package com.iluwatar.factory;
 
 import java.util.function.Supplier;
@@ -35,8 +36,7 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum CoinType {
 
-  COPPER(CopperCoin::new),
-  GOLD(GoldCoin::new);
+	COPPER(CopperCoin::new), GOLD(GoldCoin::new);
 
-  private final Supplier<Coin> constructor;
+	private final Supplier<Coin> constructor;
 }
